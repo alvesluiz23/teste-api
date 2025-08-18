@@ -1,17 +1,20 @@
+# 🚗 Cadastro de Veículos
 
+## 🚀 Como rodar o projeto
 
-Como rodar o projeto:
-  Rodando o frontend
-      - primeiro entre na pasta frontEndCadastraVeiculos/cadastro-veiculos
-      - Execute os seguintes comandos
-            $ npm install
-            $ npm run dev
+### 🔹 Frontend
+Entre na pasta do frontend:
+cd frontEndCadastraVeiculos/cadastro-veiculos/
+npm install
+npm run dev
+➡️ O frontend estará disponível em http://localhost:5173
 
-  Rodando o backend
-      - Na pasta raiz do projeto rode o comando: docker compose build
+### 🔹 Backend
+Na pasta raiz do projeto, rode:
+docker compose build
+docker compose up
+➡️ O backend estará disponível em http://localhost:8080
 
-  Documentação da API:
-      - A documentação está disponivel via swagger, basta rodar o backend e acessar a roda /swagger
-
-                
-           
+## 📚 Documentação da API
+A documentação está disponível via Swagger em:
+http://localhost:8080/swagger
