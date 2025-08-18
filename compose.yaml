@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres
+    ports:
+      - "5433:5432"
+    environment:
+      POSTGRES_DB: cadastroVeiculos
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: '123'
+    volumes:
+      - ./banco.sql:/docker-entrypoint-initdb.d/banco.sql
+  backend:
+    build: CadastroVeiculos/
+    ports:
+      - "8080:8080"
+
